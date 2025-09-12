@@ -4,8 +4,9 @@ public class Main
 	public static void main(String[] args) {
 	    Scanner sc = new Scanner(System.in);
 		int[] roll = new int[5];
-		System.out.printf("Enter the Grade:");
+		
 		for(int i=1; i< roll.length; i++){
+		    System.out.printf("Enter the Grade "+i +":");
 		    roll[i] = sc.nextInt();
 		}
 		System.out.println("your Grade");
