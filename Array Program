@@ -32,7 +32,7 @@ class Main{
     }
 }
 
-//T0 find the Frequnce repeated number
+//T0 Find The Frequnce Repeated Number
 
 import java.util.*;
 class Main{
