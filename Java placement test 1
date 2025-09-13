@@ -1,0 +1,65 @@
+//write a program to convert kg values into gram values
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        double kg = sc.nextDouble();
+        double gs =(kg)*1000;
+        System.out.println((int)gs+" Grams");
+    }
+}
+
+// Write a program to print all even numbers in range .if starting range is greater than ending range print "INVALID RANGE"
+
+import java.util.*;
+class Mian{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n = sc.nextInt();
+        int n1 = sc.nextInt();
+        if(n<n1){
+            for(int i=n;i<=n1;i++){
+                if(i%2==0){
+                    System.out.print(i+" ");
+                }
+            }
+        }
+        else{
+            System.out.println("INVALID RANGE");
+        }
+        
+    }
+}
+
+//Write a program to perform Addition, Subtraction, Multiplication and Division of 2 Numbers based on the user inputs by using Switch condition.(+ , - , * , /, %).
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n= sc.nextInt();
+        int n1= sc.nextInt();
+        char ch = sc.next().charAt(0);
+        switch(ch){
+            case '+':
+                System.out.println(n + n1);
+                break;
+            case '-':
+                System.out.println(n - n1);
+                break;
+            case '*':
+                System.out.println(n * n1);
+                break;
+            case '/':
+                System.out.println(n / n1);
+                break;
+            case '%':
+                System.out.println(n % n1);
+                break;
+        }
+        
+    }
+}
+
+//
