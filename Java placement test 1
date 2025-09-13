@@ -62,4 +62,68 @@ class Main{
     }
 }
 
-//
+//Write a Program to Print the Biggest Number out of the Given three Numbers?
+
+import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        int num3 = sc.nextInt();
+        int big = num1;
+        if(num2>big){
+            big=num2;
+        }
+        if(num3>big){
+            big=num3;
+        }
+        System.out.println(big+" is a Biggest Number from the Given Numbers");
+    }
+}
+
+//Write a Program to identiy the given number is Prime or Not Prime
+import java.util.*;
+class Main
+{
+    public static void main (String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int num1 = sc.nextInt();
+        if(num1%2==0){
+            System.out.println("Prime Number");
+        }
+        else if(num1%2!=0){
+            System.out.println("Not a Prime Number");
+        }
+        else if (num1 <1){
+            System.out.println("Not a Valid input");
+        }
+    }
+}
+
+//Write a program to print all Odd Numbers in Given Range.if starting range is greater than ending range print "INVALID RANGE"
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n = sc.nextInt();
+        int n2 = sc.nextInt();
+        if(n<n2){
+            for (int i=n; i<=n2; i++){
+                if(i%2!=0){
+                    System.out.print(i+" ");
+                    
+                }
+            }
+        }
+        else{
+            System.out.println("INVALID RANGE");
+        }
+    }
+}
+
+
