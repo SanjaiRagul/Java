@@ -127,3 +127,23 @@ class Main{
 }
 
 
+//write a program to print all character by using char variable
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if (ch =='a'){
+            for (char ch1='a'; ch1<='z'; ch1++){
+                System.out.print(ch1+" ");
+            }
+        }
+        if (ch =='A'){
+            for (char ch1='A'; ch1<='Z'; ch1++){
+                System.out.print(ch1+" ");
+            }
+        }
+        
+    }
+}
