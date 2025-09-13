@@ -18,3 +18,16 @@ public class Main
 		
 	}
 }
+
+//To check the Array Index
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int[] arr ={1,2,3,4,5,6};
+        System.out.print("enter the index: ");
+        int i =sc.nextInt();
+            System.out.println("Value is: "+arr[i]);
+    }
+}
