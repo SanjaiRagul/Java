@@ -57,7 +57,7 @@ public class Main {
     }
 }
 
-// 4.write the  program for Armstrong in java
+// 4.Write the  program for Armstrong in java
 import java.util.Scanner;
  public class Main {
     public static void main(String[] args) {
