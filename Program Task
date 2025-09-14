@@ -27,3 +27,32 @@ class Main{
         }
     } 
 }
+
+//Write a program to check whether a number is prime or not
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int flag = 0; 
+        if (num <= 1) {
+            System.out.println(num + " is NOT a Prime number.");
+        } 
+        else {
+            for (int i = 2; i < num; i++) {  
+                if (num % i == 0) {
+                    flag = 1; 
+                    break;
+                }
+            }
+            if (flag == 0) {
+                System.out.println(num + " is a Prime number.");
+            } 
+            else {
+                System.out.println(num + " is NOT a Prime number.");
+            }
+        }
+    }
+}
