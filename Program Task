@@ -56,3 +56,18 @@ public class Main {
         }
     }
 }
+
+//write the  program for Armstrong in java
+import java.util.Scanner;
+ public class Main {
+    public static void main(String[] args) {
+        int n = new java.util.Scanner(System.in).nextInt();
+        int t = n, sum=0;
+        while(t!=0){ 
+            int d=t%10; 
+            sum += d*d*d; 
+            t/=10; 
+        }
+        System.out.println(sum==n ? "Armstrong" : "Not Armstrong");
+    }
+ }
