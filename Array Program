@@ -85,3 +85,34 @@ public class Main
 		
 	}
 }
+
+// 2d array Program
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.print("Enter the Size of rows:");
+	    int rows = sc.nextInt();
+	    System.out.print("Enter the Size of colums:");
+	    int colums = sc.nextInt();
+	    int mat[][] = new int[rows][colums];
+	    int sum=0;
+	    System.out.println("Enter the marix elem: ");
+	    for(int i=0; i<rows; i++){
+	        for(int j=0; j<colums; j++){
+	            mat[i][j]=sc.nextInt();
+	            
+	        }
+	    }
+	    System.out.println("matrix is: ");
+	    for(int i=0; i<rows; i++){
+	        for(int j=0; j<colums; j++){
+	            System.out.print(mat[i][j]+" ");
+	        }
+	        System.out.println();
+	    }
+	    
+	    
+	}
+}
