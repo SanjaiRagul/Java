@@ -162,3 +162,36 @@ public class Main
 	    
 	}
 }
+// matrix transpose
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.print("Enter the Size of rows:");
+	    int rows = sc.nextInt();
+	    System.out.print("Enter the Size of colums:");
+	    int colums = sc.nextInt();
+	    int a[][] = new int[rows][colums];
+	    int b[][] = new int[rows][colums];
+	    int sum[][] = new int[rows][colums];
+	   
+	    System.out.println("Enter the A marix elem: ");
+	    for(int i=0; i<rows; i++){
+	        for(int j=0; j<colums; j++){
+	            a[i][j]=sc.nextInt();
+	            
+	        }
+	    }
+	    
+	    System.out.println("matrix is: ");
+	    for(int i=0; i<rows; i++){
+	        for(int j=0; j<colums; j++){
+	            System.out.print(a[j][i]+" ");
+	        }
+	        System.out.println();
+	    }
+	    System.out.println();
+	    
+	}
+}
