@@ -40,5 +40,11 @@ class Main
         // 11
         String joined = String.join("-","one","two","three");
         System.out.println("joined:"+ joined);
+        // 12
+        String empty="";
+        String blank="bh";
+        System.out.println("empty: "+empty.isEmpty());
+        System.out.println("blank"+blank.isBlank());
+        
     }
 }
