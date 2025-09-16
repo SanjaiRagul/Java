@@ -45,12 +45,18 @@ class Main
 		String blank="bh";
 		System.out.println("empty: "+empty.isEmpty());
 		System.out.println("blank"+blank.isBlank());
-		// 13. toCharArray
+		// 13
 		char[] chars = n.toCharArray();
 		System.out.print("Char Array: ");
 		for (char c: chars) {
 			System.out.print(c + " ");
 		}
 		System.out.println();
+        // 14
+        int num = 100;
+        System.out.println("String.valueOf: "+ String.valueOf(num));
+        // 15
+        System.out.println("Repeat 3 times: "+ n.repeat(3));
+        
 	}
 }
