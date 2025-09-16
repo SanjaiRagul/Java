@@ -22,4 +22,27 @@ class Main {
 	}
 }
 
+// easy way to find the vowels and consonanats
+import java.util.*;
+class Main {
+	public static void main(String[]args) {
+		String a = "ashwanth";
+		int vowles=0;
+		int consnants=0;
+		for(char c: a.toCharArray()) {
+			if(Character.isLetter(c)) {
+				if("aeiou".indexOf(c)!=-1) {
+					vowles++;
+					System.out.println("vowles" +vowles);
+				}
+				else {
+					consnants++;
+					System.out.println("consnants" + consnants);
+				}
+
+			}
+		}
+		System.out.println();
+	}
+}
 
