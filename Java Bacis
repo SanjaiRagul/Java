@@ -1,0 +1,44 @@
+import java.util.*;
+class Main
+{
+    public static void main(String []args)
+    {
+        String n=" hi word ";
+        String n1="hi";
+        String n2="JAVA";
+        // 1
+        System.out.println("Length: "+n.length());
+        System.out.println("Char: "+n.charAt(6));
+        // 2
+        System.out.println(n.toUpperCase());
+        System.out.println(n2.toLowerCase());
+        //3
+        System.out.println(n.trim()+" ");
+        // 4
+        System.out.println(n.substring(2,6));
+        // 5
+        System.out.println(n.contains("hi"));
+        System.out.println(n.startsWith(" hi "));
+        System.out.println("endsWith: "+n.endsWith(" world"));
+        // 6
+        System.out.println("equal: "+n.equals("hi"));
+        System.out.println("equalsIgnoreCase: "+n1.equalsIgnoreCase("HI"));
+        // 7
+        System.out.println("Compare:"+ n.compareTo(n2));
+        // 8
+        System.out.println("index: "+ n.indexOf('o'));
+        System.out.println("lastindex: "+n.lastIndexOf('o'));
+        // 9
+        System.out.println("replace:" +n.replace("hi","Hello"));
+        System.out.println("all replace: "+ n.replaceAll(" ",""));
+        // 10
+        String[] parts=n.trim().split(" ");
+        System.out.println("Split Word: ");
+        for(String word: parts){
+            System.out.println(word);
+        }
+        // 11
+        String joined = String.join("-","one","two","three");
+        System.out.println("joined:"+ joined);
+    }
+}
