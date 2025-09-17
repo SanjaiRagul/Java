@@ -1,5 +1,4 @@
 // to find the how many vowels and consonants in a string
-
 import java.util.*;
 class Main {
 	public static void main (String[] args) {
@@ -14,14 +13,13 @@ class Main {
 			else if(ch >= 'a' && ch <= 'z') {
 				++consonants;
 			}
-			
 		}
 		System.out.println("Vowels: " + vowels);
         System.out.println("Consonants: " + consonants);
 
 	}
 }
-
+********************************************************************************************************************************************************************
 // easy way to find the vowels and consonanats
 import java.util.*;
 class Main {
@@ -45,7 +43,7 @@ class Main {
 		System.out.println();
 	}
 }
-
+********************************************************************************************************************************************************************
 // string to check the Palindeome are not Palindrome
 import java.util.Scanner;
 public class Main {
@@ -60,6 +58,7 @@ public class Main {
         System.out.println(str.equals(rev)? "Palindrome" : "Not Palindrome");
     }
 }
+********************************************************************************************************************************************************************
 // Get char at index
 import java.util.*;
 class Main{
@@ -72,6 +71,7 @@ class Main{
         
     }
 }
+********************************************************************************************************************************************************************
 // to Concatenate the string
 import java.util.*;
 class Main{
@@ -81,6 +81,7 @@ class Main{
         System.out.println("The concatenated string:"+st1.concat(st2));
     }
 }
+********************************************************************************************************************************************************************
 // Contains Specified Sequence
 import java.util.*;
 class Main{
