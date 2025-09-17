@@ -91,3 +91,21 @@ class Main{
         System.out.println(str.contains(str1));
     }
 }
+********************************************************************************************************************************************************************
+// using StringBuffer and StringBuilder
+import java.util.*;
+class Main{
+    public static void main (String[] args) {
+        StringBuilder sb=new StringBuilder("java program ");
+        sb.insert(5,"hello ");
+        System.out.println(sb);
+        
+        StringBuffer sb1=new StringBuffer("java");
+        sb1.append("program");
+        System.out.println(sb1);
+        
+        StringBuffer sb2=new StringBuffer("hello world");
+        sb2.reverse();
+        System.out.println(sb2);
+    }
+}
