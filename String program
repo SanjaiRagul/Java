@@ -60,3 +60,33 @@ public class Main {
         System.out.println(str.equals(rev)? "Palindrome" : "Not Palindrome");
     }
 }
+// Get char at index
+import java.util.*;
+class Main{
+    public static void main (String[] args) {
+        String str="java Exercise!";
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the index: ");
+        int ind=sc.nextInt();
+        System.out.print("The character at position "+ind+"is: "+str.charAt(ind));
+        
+    }
+}
+// to Concatenate the string
+import java.util.*;
+class Main{
+    public static void main (String[] args) {
+        String st1="PHP Exercises and ";
+        String st2="Python Exercises";
+        System.out.println("The concatenated string:"+st1.concat(st2));
+    }
+}
+// Contains Specified Sequence
+import java.util.*;
+class Main{
+    public static void main (String[] args) {
+        String str="PHP Exercises and Python Exercises";
+        String str1="an";
+        System.out.println(str.contains(str1));
+    }
+}
