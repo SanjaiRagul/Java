@@ -75,3 +75,18 @@ class Main{
         System.out.println(results);
     }
 }
+******************************************************************************************************************************************************************************************
+// with parameter and return type
+class ksr {
+    public static int add(int a, int b) {
+        int c = a + b;
+        return c;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        int result = ksr.add(10, 20);
+        System.out.println("Sum is: " + result);
+    }
+}
