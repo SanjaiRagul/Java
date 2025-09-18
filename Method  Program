@@ -160,3 +160,29 @@ class Main {
 		
 	}
 }
+*******************************************************************************************************************************************************************
+// without parameter and with return type for finding biggest number
+import java.util.*;
+class vlo{
+    public int biggest(){
+        int num = 1234;
+        int max=0;
+        while(num>0){
+            int d =num%10;
+            if (d > max) {
+                max = d;
+            }
+            num = num / 10;
+        }
+        
+        return max;
+    }
+            
+}
+class Main{
+    public static void main (String[] args) {
+        vlo m = new vlo();
+        int result = m.biggest();
+        System.out.println("Biggest digit is: " + result);
+    }
+}
