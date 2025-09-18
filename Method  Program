@@ -138,3 +138,25 @@ class Main {
 		System.out.println();
 	}
 }
+*******************************************************************************************************************************************************************
+// factorial problem without parameter
+import java.util.*;
+class vlo {
+	void display() {
+        Scanner sc=new Scanner(System.in);
+	    int number =sc.nextInt();
+	    int factorial=1;
+		for (int i = 1; i <= number; i++) {
+			factorial *= i;
+		}
+		System.out.println(factorial);
+	}
+}
+class Main {
+	public static void main(String[]args) {
+
+		vlo m=new vlo();
+		m.display();
+		
+	}
+}
