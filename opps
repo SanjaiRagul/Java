@@ -1,4 +1,4 @@
-// Bacis Multilevel program in opps
+// Basic Multilevel program in opps
 class GrandFather{
     void land(){
         System.out.println("100 acers");
@@ -21,4 +21,68 @@ public class Main{
 		a.bike();
 		a.money();
 	}
+}
+***********************************************************************************************************************************************************************
+// Multilevel program in opps
+import java.util.*;
+
+class Bike{
+    void Types(){
+        System.out.println("---------------------");
+        System.out.println("TYPES OF BIKES WE HAVE:");
+       
+        System.out.println("1. EV ");
+        System.out.println("2. Petrol engines");
+        System.out.println("Disel engine");
+         System.out.println("------------------------");
+    }
+}
+
+class Ev extends Bike{
+    void Evs(){
+        System.out.println("EV MODEL:");
+        
+        System.out.println("1. ABC");
+        System.out.println("2. DEF");
+        System.out.println("3. GHI");
+        System.out.println("4. JKL");
+        
+       
+    }
+}
+
+class Prop extends Ev{
+    void Dis(){
+        System.out.println("---------------------------");
+        System.out.println("PROPERTIES OF EV:");
+        System.out.println("1.No petrol or disel needed");
+        System.out.println("2.Uses only the electrical power");
+        System.out.println("3.Easy to handle");
+        System.out.println("4.Autotamic available");
+           System.out.println("-------------------------------");
+    }
+}
+
+class Rate extends Prop{
+    void rat(){
+        System.out.println();
+       
+        System.out.println("PRICE OF 4 WHEELERS:");
+        System.out.println("Showroom price    :Rs.12,45,000/-");
+        System.out.println("Modification price:Rs.   25,000/-");
+        System.out.println("Tax               :Rs. 2,50,000/-");
+        System.out.println("On road price     :Rs.15,20,000/-");
+        System.out.println("-------------------------------");
+    }
+}
+
+class Main{
+    public static void main(String []args){
+        Rate obj=new Rate();
+        
+        obj.Types();
+        obj.Evs();
+        obj.Dis();
+        obj.rat();
+    }
 }
