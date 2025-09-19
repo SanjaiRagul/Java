@@ -158,3 +158,22 @@ public class Main
 		System.out.println(ca.add(5.5,2.5));
 	}
 }
+********************************************************************************************************************************************************************
+// using private class
+class Person{
+    private String name;
+    
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+}
+public class Main{
+    public static void main (String[] args) {
+        Person p=new Person();
+        p.setName("java");
+        System.out.println(p.getName());
+    }
+}
