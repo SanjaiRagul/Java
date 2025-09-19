@@ -1,0 +1,24 @@
+// Bacis program in opps
+class GrandFather{
+    void land(){
+        System.out.println("100 acers");
+    }
+}
+class Father extends GrandFather{
+    void bike(){
+        System.out.println("BMW");
+    }
+}
+class Child extends Father{
+    void money(){
+        System.out.println("200000");
+    }
+}
+public class Main{
+	public static void main(String[] args) {
+		Child a = new Child();
+		a.land();
+		a.bike();
+		a.money();
+	}
+}
