@@ -113,3 +113,26 @@ public class Main{
 		a.money();
 	}
 }
+******************************************************************************************************************************************************************
+// Overriding problem in opps
+class Student{
+    void san(){
+        System.out.println("Sanjai");
+    }
+}
+class Student1 extends Student{
+    void san(){
+        System.out.println("san");
+    }
+}
+class Student2 extends Student1{
+    void san(){
+        System.out.println("jai");
+    }
+}
+class Main{
+    public static void main (String[] args) {
+        Student2 s=new Student2();
+        s.san();
+    }
+}
