@@ -41,3 +41,26 @@ public class Main {
 		System.out.println("Program continues");
 	}
 }
+**********************************************************************************************************************************************************************
+//using throws and throw
+class  AgeException extends Exception {
+}
+class Main {
+	static void checkAge (int age) throws AgeException {
+		if (age < 18) {
+			throw new AgeException();
+		} else {
+			System.out.println("Eligible to vote ");
+		}
+	}
+	public static void main(String[] args) {
+		try {
+			int age=19;
+			checkAge(age);
+		} catch (AgeException e) {
+			System.out.println(" Not eligible to vote!");
+		} finally {
+			System.out.println("Finally block executed.");
+		}
+	}
+}
