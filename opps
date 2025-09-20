@@ -177,3 +177,31 @@ public class Main{
         System.out.println(p.getName());
     }
 }
+********************************************************************************************************************************************************************
+// Abstract Method
+abstract class Bike{
+    abstract void run();
+    void flueType(){
+        System.out.println("Petrol");
+    }
+}
+class Ktm extends Bike{
+    void run(){
+        System.out.println("Ktm is running at 100 km/h");
+    }
+}
+class Bmw extends Bike{
+    void run(){
+        System.out.println("Bmw is running at 170 km/h");
+    }
+}
+public class Main{
+	public static void main(String[] args) {
+		Bike b1 =new Ktm();
+		b1.run();
+		b1.flueType();
+		Bike b2 =new Bmw();
+		b2.run();
+		b2.flueType();
+	}
+}
