@@ -11,3 +11,19 @@ public class Main
 	    }
 	}
 }
+***********************************************************************************************************************************************************************************************************************
+// Using finally keyword
+public class Main
+{
+	public static void main(String[] args) {
+	    try{
+	        int a=10/0;
+	    }
+	    catch(ArithmeticException e){
+	        System.out.println("Catch: "+e);
+	    }
+	    finally{
+	        System.out.println("Finally block always executed");
+	    }
+	}
+}
