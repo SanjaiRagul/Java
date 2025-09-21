@@ -103,7 +103,7 @@ class Main
         }
     }
 }
-
+********************************************************************************************************************************************************************
 //Write a program to print all Odd Numbers in Given Range.if starting range is greater than ending range print "INVALID RANGE"
 
 import java.util.*;
@@ -126,7 +126,7 @@ class Main{
     }
 }
 
-
+********************************************************************************************************************************************************************
 //write a program to print all character by using char variable
 
 import java.util.*;
