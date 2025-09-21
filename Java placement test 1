@@ -9,7 +9,7 @@ class Main{
         System.out.println((int)gs+" Grams");
     }
 }
-
+********************************************************************************************************************************************************************
 // Write a program to print all even numbers in range .if starting range is greater than ending range print "INVALID RANGE"
 
 import java.util.*;
@@ -31,7 +31,7 @@ class Mian{
         
     }
 }
-
+********************************************************************************************************************************************************************
 //Write a program to perform Addition, Subtraction, Multiplication and Division of 2 Numbers based on the user inputs by using Switch condition.(+ , - , * , /, %).
 
 import java.util.*;
@@ -61,7 +61,7 @@ class Main{
         
     }
 }
-
+********************************************************************************************************************************************************************
 //Write a Program to Print the Biggest Number out of the Given three Numbers?
 
 import java.util.*;
@@ -83,7 +83,7 @@ class Main
         System.out.println(big+" is a Biggest Number from the Given Numbers");
     }
 }
-
+********************************************************************************************************************************************************************
 //Write a Program to identiy the given number is Prime or Not Prime
 import java.util.*;
 class Main
