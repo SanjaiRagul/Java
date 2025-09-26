@@ -88,5 +88,22 @@ class Sll{
             }
             temp.next  = null;
         }
-    }
-}
+        // Delete at middle
+        public void deleteAtMiddle(int position){
+            if (head==null){
+                System.out.println("List id empty");
+            }
+            if(position == 1){
+                deleteAtBiginning();
+                return;
+            }
+            Node temp = head;
+            for(int i=1; i<position 1 && temp!= null; i++){
+                temp = temp.next;
+            }
+            if(temp.next == null){
+                System.out.println("position out of range");
+                return; 
+            }
+            temp.next = temp.next.next;
+        }
