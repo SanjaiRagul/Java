@@ -64,5 +64,29 @@ class Sll{
             newNode.next = temp.next;
             temp.next = newNode;
         }
+        // Delete at insertAtBeginning
+        public void deleteAtBiginning(){
+            if (head == null){
+                System.out.println("list is empty");
+                return;
+            }
+            head = head.next;
+        }
+        // Delete at newNode
+        public void deleteAtEnd(){
+            if (head == null){
+                System.out.println("List is empty");
+                return;
+            }
+            if(head.next == null){
+                head = null;
+                return;
+            }
+            Node temp = head;
+            while(temp.next.next !=null){
+                temp = temp.next;
+            }
+            temp.next  = null;
+        }
     }
 }
