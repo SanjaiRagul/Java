@@ -182,7 +182,7 @@ public class Main {
 class DLL{
     Node head;
     
-    Class Node{
+    class Node{
         int data ;
         Node prev,next;
         
@@ -201,7 +201,7 @@ class DLL{
         }
         head = newNode; //
     }
-    // inset at newNode
+    // inset at end
     public void insertAtEnd(int data){
         Node newNode = new Node(data);
         
@@ -210,10 +210,117 @@ class DLL{
             return;
         }
         Node temp = head;
-        while(temp.next != nill){
+        while(temp.next != null){
             temp = temp.next;
         }
         temp.next = newNode;
         newNode.prev = temp;
+    }
+    // insert at middle(position, 1- based index)
+    public void insertAtMiddle(int data, int position){
+        if(position == 1){
+            insertAtBeginning(data);
+            return;
+        }
+        Node newNode = new Node(data);
+        Node temp = head;
+        for(int i=1; i<position-1 && temp!=null;i++){
+            temp = temp.next;
+        }
+        if (temp == null || temp.next == null){
+            insertAtEnd(data);
+            return;
+        }
+        newNode.next = temp.next;
+        newNode.prev = temp;
+        temp.next.prev = newNode;
+        temp.next = newNode;
+    }
+    // delete at Beginning
+    public void deleteAtBeginning() {
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+        head = head.next;
+    }
+    // delete at end
+    public void deleteAtEnd(){
+        if (head == null) {
+            System.out.println("List is empty.");
+            return;
+        }
+        if(head.next == null){
+            head = null;
+            return;
+        }
+        Node temp = head;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+        temp.prev.next = null;
+    }
+    // delete at middle
+    public void deleteAtMiddle(int position){
+        if(head ==null){
+            System.out.println("List is empty");
+            return;
+        }
+        if(position ==1){
+            deleteAtBeginning();
+            return;
+        }
+        Node temp = head;
+        for(int i=1; i<position && temp!=null; i++){
+            temp = temp.next;
+        }
+        if(temp == null){
+            System.out.println("position out of range");
+            return;
+        }
+        if(temp.next!=null){
+            temp.next.prev = temp.prev;
+        }
+        if(temp.prev!=null){
+            temp.prev.next = temp.next;
+        }
+    }
+    // display 
+    public void display(){
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        Node temp = head;
+        while(temp!= null){
+            System.out.print(temp.data +" ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+}
+public class Main{
+    public static void main (String[] args) {
+        DLL list = new DLL();
+        
+        list.insertAtEnd(10);
+        list.insertAtEnd(20);
+        list.insertAtEnd(30);
+        list.display();
+        
+        list.insertAtBeginning(5);
+        list.display();
+        
+        list.insertAtMiddle(15,3);
+        list.display();
+        
+        list.deleteAtBeginning();
+        list.display();
+        
+        list.deleteAtEnd();
+        list.display();
+        
+        list.deleteAtMiddle(2);
+        list.display();
     }
 }
