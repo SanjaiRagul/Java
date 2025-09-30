@@ -668,3 +668,73 @@ public class Main {
     }
 }
 *********************************************************************************************************************************************
+class Node {
+	int data;
+	Node next;
+	Node (int data) {
+		this.data= data;
+		this.next = null;
+	}
+}
+class LinkedListStack {
+	Node top = null;
+
+	void push(int val) {
+		Node newNode = new Node(val);
+		if(top == null) {
+			top = newNode;
+		}
+		else {
+			newNode.next = top;
+			top = newNode;
+		}
+	}
+	void pop() {
+		if(top==null) {
+			System.out.println("stack is empty");
+		}
+		else {
+			System.out.println(top.data);
+			top = top.next;
+		}
+	}
+	void peek() {
+		if(top==null) {
+			System.out.println("stack is empty");
+		}
+		else {
+			System.out.println(top.data);
+		}
+	}
+	void sekar() {
+		if(top == null) {
+			System.out.println("stack is empty");
+		}
+		else {
+			Node temp = top;
+			while (temp != null) {
+				System.out.print(temp.data + " ");
+				temp = temp.next;
+			}
+			System.out.println(); 
+		}
+	}
+	boolean isEmpty(){
+        return top == null;
+	}
+}
+class Main {
+	public static void main (String[] args) {
+		LinkedListStack stack = new LinkedListStack();
+
+		stack.push(10);
+		stack.push(20);
+		stack.push(30);
+		stack.sekar();
+		
+		stack.peek();
+		stack.pop();
+		
+		stack.sekar();
+	}
+}
