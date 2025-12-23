@@ -20,3 +20,23 @@ public class Main
     }
 }
 **********************************************************************************************************************************************************************************************************************
+// share percentage for menbers
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    int input1 = 1000;
+	    int input2 = 50;
+	    int input3 = 40;
+	    System.out.println("Total treasure:"+input1);
+	    int A_percentage=(input1*input2)/100;
+	    int B_percentage=(A_percentage*input3)/100;
+	    System.out.println("A percentage:"+A_percentage);
+	    System.out.println("B percentage:"+B_percentage);
+	    int remaining = input1-(A_percentage+B_percentage);
+	    int Share = remaining/3;
+	    System.out.println("C Share"+Share);
+	    System.out.println("D Share"+Share);
+	    System.out.println("E Share"+Share);
+	}
+}
