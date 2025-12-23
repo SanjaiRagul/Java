@@ -1,0 +1,22 @@
+To conver cent to dollars
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args){
+        int a= 102; //Dollar1 
+        int b= 55;  //cent1
+        int c = 48; //Dollar2
+        int d = 45;  //cent 2
+        int Dollar =(a+c);
+        int Cent =(b+d);
+        if(Cent>=100){
+            Dollar+=Cent/100;
+            Cent=Cent%100;
+            System.out.println("Dollar"+Dollar);
+            System.out.println(Cent);
+        }
+        
+    }
+}
+**********************************************************************************************************************************************************************************************************************
