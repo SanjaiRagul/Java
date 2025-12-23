@@ -60,3 +60,21 @@ class Main
         
 	}
 }
+********************************************************************************************************************************************************************
+
+to add the first and last number
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args){
+        int a= 1234;
+        if(a>999 && a<10000){
+            int f = a%10;
+            int l = a/1000;
+            System.out.println(f+l);
+        }
+        else System.out.println("Invalid");
+       
+    }
+}
