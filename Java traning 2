@@ -52,3 +52,13 @@ public class Main
 	   System.out.println("r"+r+"c"+c);
 	}
 }
+********************************************************************************************************************************************************************
+// to convert the integers to float
+public class Main
+{
+	public static void main(String[] args) {
+		int i1 = 2,i2=4,i3=10,i4=15;
+		float a=(i1+i3)/2 , b=(i2+i4)/2f;
+		System.out.println(a+","+b);
+	}
+}
