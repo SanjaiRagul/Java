@@ -62,3 +62,16 @@ public class Main
 		System.out.println(a+","+b);
 	}
 }
+********************************************************************************************************************************************************************
+// to find the distance 
+public class Main
+{
+	public static void main(String[] args) {
+		int i1 = 5,i2=10,i3=3,i4=4;
+		int dis1=i1-i3;
+		int dis2=i2-i4;
+		double total_dis=Math.sqrt(dis1*dis1+dis2*dis2);
+		System.out.println((int)total_dis);
+		
+	}
+}
