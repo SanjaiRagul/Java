@@ -101,3 +101,24 @@ public class Main
 	}
 }
 
+********************************************************************************************************************************************************************
+// to fin the kaprekar number
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int temp=n;
+		int sqr=n*n;
+		int count=0;
+		while(n!=0) {
+		    n/=10;
+			count++;
+		}
+		int power =(int)Math.pow(10,count);
+		int fhalf=sqr/power;
+		int shalf=sqr%power;
+		System.out.println(temp==(fhalf+shalf)?"Kaprekar": "Not Kaprekar");
+	}
+}
