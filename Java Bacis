@@ -78,3 +78,26 @@ public class Main
        
     }
 }
+********************************************************************************************************************************************************************
+// to add the sum of single digits
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int n=12345;
+		while(n>=10) {
+			int sum=0;
+			while(n>0) {
+				sum+=n%10;
+				n/=10;
+			}
+			n=sum;
+		}
+		System.out.println(n);
+// others method
+        if(n<=9) System.out.println(n);
+        else if(n%9==0) System.out.println("9");
+        else System.out.println(n%9);
+	}
+}
+
