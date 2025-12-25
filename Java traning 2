@@ -197,24 +197,24 @@ public class Main
 	}
 }
 *******************************************************************************************************************************************************************
-//
+// to calculate the total crr and trr
 import java.util.*;
 public class Main
 {
 	public static void main(String[] args) {
-		int total_balls=350;
-		int total_runs=300;
+		int total_balls=300;
+		int total_runs=375;
 		int runs_scored=78;
 		int balls_bowled=45;
 		
 		int n_o_overs =total_balls/6;
 		System.out.println("n_o_overs:"+n_o_overs);
 		
-		float o_finished= balls_bowled/6.0f;
+		float o_finished= (balls_bowled/6)+(balls_bowled%6)*0.1f;
 		System.out.println("o_finished:"+o_finished);
 		
 		float crr = runs_scored/o_finished;
-		System.out.println("crr: "+crr);
+	    System.out.printf("CRR: %.1f%n", crr);
 		
 		float trr = (float)total_runs/n_o_overs;
 		System.out.println("trr: "+trr);
