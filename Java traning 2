@@ -166,3 +166,34 @@ public class Main
 		
 	}
 }
+*******************************************************************************************************************************************************************
+// to find the second largest number and find the GCD
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+		int i1=10;
+		int i2=2;
+		int i3=9;
+		int i=1;
+		if(i1>i2 && i1<i3){
+		    System.out.println(i1);
+		}
+		else if(i2>i1 && i2<i3){
+		    System.out.println(i2);
+		}
+		else
+		    System.out.println(i3);
+		 
+		while(i>=0){
+		    i++;
+		    if(i1%i==0 && i2%i==0 && i3%i==0){
+		        System.out.println("key is"+i);
+		        break;
+		    }
+		}
+		
+	}
+}
+*******************************************************************************************************************************************************************
