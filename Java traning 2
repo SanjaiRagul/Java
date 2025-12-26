@@ -306,3 +306,18 @@ public class Main
 		}
 	}
 }
+***********************************************************************************************************************************************
+//
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int num=new java.util.Scanner(System.in).nextInt();
+		int total=1;
+		for(int i=1;i<=num;i++){
+		    total=num%1000*1;
+		}
+		System.out.println(total);
+		
+	}
+}
