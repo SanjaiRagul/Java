@@ -275,3 +275,34 @@ public class Main
 		
 	}
 }
+*******************************************************************************************************************************************************************
+// to check the Month date by using year
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int year=new java.util.Scanner(System.in).nextInt();
+		int month=new java.util.Scanner(System.in).nextInt();
+		int leap =0;
+		if(year>1900 && year<=9999&&month>1 && month<=12) {
+			if(year%400==0||year%4==0&&year%100!=0) {
+				leap=year;
+			}
+			if(month==2&&leap==year) {
+				System.out.println("29");
+			}
+			else if(month==4||month==6||month==9||month==11) {
+				System.out.println("30");
+			}
+			else if(month==2) {
+				System.out.println("28");
+			}
+			else {
+				System.out.println("31");
+			}
+		}
+		else{
+		    System.out.println("0 Days");
+		}
+	}
+}
