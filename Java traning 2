@@ -248,3 +248,30 @@ public class Main
 		System.out.println(c);
 	}
 }
+*******************************************************************************************************************************************************************
+//
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		int y=sc.nextInt();
+		
+		for(int i=x;i<=y;i++){
+		    int split1=i/10;
+		    int split2=i%10;
+		    
+		    int split_sum=split1+split2;
+		    int split_multiply=split1*split2;
+		    
+		    int final_sum=split_sum+split_multiply;
+		    
+		    if(final_sum==i){
+		        System.out.print(i+" ");
+		    }
+		}
+
+		
+	}
+}
