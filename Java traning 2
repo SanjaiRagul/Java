@@ -321,3 +321,76 @@ public class Main
 		
 	}
 }
+*************************************************8
+import java.util.*;
+class Main {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the Acc no:");
+		int ac=1234567;
+		int blc=7000;
+		if(ac>999999&&ac<99999999) {
+			System.out.println("Acc Type");
+			System.out.println("1.Saving");
+			System.out.println("2.Current");
+			System.out.print("Select Acc Type:");
+			int ent_acc_type=sc.nextInt();
+			switch(ent_acc_type) {
+			case 1:
+			case 2:
+				System.out.println("1.Withdraw");
+				System.out.println("2.Deposit");
+				System.out.println("3.Bal Enquiry");
+				System.out.print("Select the Transction Type:");
+				int at=sc.nextInt();
+				switch(at) {
+				case 1:
+					System.out.print("Enter the Withdraw Amount:");
+					int wi=sc.nextInt();
+					if(wi<=blc) {
+						if (ent_acc_type == 1 && (blc - wi) < 1000) {
+							System.out.println("Minimum balance for Saving Account is 1000");
+						}
+						else if(ent_acc_type ==2) {
+							if((blc-wi)<5000) {
+								System.out.println("Minimum balance for Saving Account is 5000");
+							}
+							else {
+								wi=wi+15;
+								blc = blc - wi;
+								System.out.println("Withdrawal Successful");
+								System.out.println("Available Balance: " + blc);
+							}
+						}
+						else {
+							wi=wi+10;
+							blc = blc - wi;
+							System.out.println("Withdrawal Successful");
+							System.out.println("Available Balance: " + blc);
+						}
+					}
+					else {
+						System.out.println("Insufficient Balance");
+					}
+					break;
+				case 2:
+					System.out.print("Enter the Deposit Amount:");
+					int de=sc.nextInt();
+					if(de<=15000){
+					    de=()
+					}
+					
+					
+					
+					
+				default:
+					System.out.println("Invalid Transction Type");
+				}
+			}
+
+		}
+		else {
+			System.out.println("Invalid Acc no");
+		}
+	}
+}
