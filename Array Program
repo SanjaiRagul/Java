@@ -225,3 +225,31 @@ public class Main
 		}
 	}
 }
+**********************************************************************************************************************************************
+//
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int r=sc.nextInt();
+		int right=r-1;
+		int left=0;
+		int[]arr=new int[r];
+		for(int i=0; i<r; i++) {
+			arr[i]=sc.nextInt();
+		}
+		Arrays.sort(arr);
+		while(left<right){
+		    System.out.println(arr[right]+" "+arr[left]);
+		    right--;
+		    left++;
+		}
+		if(r%2!=0){
+		    System.out.print(arr[left]+" "+"0");
+
+		}
+		
+		
+	}
+}
