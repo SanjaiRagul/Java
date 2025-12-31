@@ -146,3 +146,30 @@ public class Main
 		System.out.println(b);
 	}
 }
+*********************************************************************************************************************************************
+//
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String a = sc.nextLine(); 
+        String b = sc.nextLine(); 
+
+        int i = 0, j = 0;
+
+        while (i < a.length() && j < b.length()) {
+            if (a.charAt(i) == b.charAt(j)) {
+                j++;
+            }
+            i++;
+        }
+
+        if (j == b.length()) {
+            System.out.println("subsequence");
+        } else {
+            System.out.println("not a subsequence");
+        }
+    }
+}
