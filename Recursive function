@@ -26,3 +26,27 @@ class Main {
         sc.close();
     }
 }
+*********************************************************************************************************************************************
+//
+import java.util.*;
+public class Main
+{
+	static Boolean Prime(int n,int i) {
+		if (n <= 1)
+			return false;
+		if (n % i == 0)
+			return false;
+		if (i * i > n)
+			return true;
+
+		return Prime(n, i + 1);
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		System.out.println(Prime(n, 2));
+
+	}
+}
+
+
