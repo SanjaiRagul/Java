@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		LinkedList<Integer> list= new LinkedList<>();
+		
+		list.add(59);
+		list.add(21);
+		list.add(10);
+		for(int c:list){
+		    if(c%2==0){
+		        System.out.println("even");
+		    }
+		    else{
+		        System.out.println("odd");
+		    }
+		}
+		                   
+	}
+}
