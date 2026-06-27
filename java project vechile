@@ -1,0 +1,71 @@
+package Sanjai;
+import java.util.*;
+
+abstract class VS{
+	String name;
+	String no;
+	String type;
+	VS(String name,String no,String type){
+		this.name=name;
+		this.no=no;
+		this.type=type;
+	}
+	abstract double cscharge();
+	void display() {
+		System.out.println(name);
+		System.out.println(no);
+		System.out.println(type);
+	}
+}
+class CService extends VS{
+	double spcost;
+	CService(String name,String no,String type,double spcost){
+		super(name,no,type);
+		this.spcost=spcost;
+	}
+	@Override
+	double cscharge() {
+		// TODO Auto-generated method stub
+		
+		return spcost+2000;
+		
+		
+	}
+	void display1(){
+		display();
+		System.out.println("Car");
+		System.out.println(spcost);
+		System.out.println(cscharge());
+	}
+}
+class Bservice extends VS{
+	double spcost;
+	Bservice(String name,String no,String type,double spcost){
+		super(name,no,type);
+		this.spcost=spcost;
+	}
+	@Override
+	double cscharge() {
+		return spcost+800;
+		 
+	}
+	void display2() {
+		display();
+		System.out.println("Bike");
+		System.out.println(spcost);
+		System.out.println(cscharge());
+	
+	}
+}
+public class Java_mini_project {
+	public static void main(String[] args) {
+		VS s;
+		s=new CService("Sanjai", "TN 28 AB 1234","Genral Service", 3500);
+		((CService)s).display1();
+		System.out.println("----------------------------------------------");
+		s=new Bservice("Ragul", "TN 28 AB 1234","oil Service", 1200);
+		((Bservice)s).display2();
+
+		
+	}
+}
