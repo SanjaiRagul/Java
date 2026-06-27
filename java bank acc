@@ -1,0 +1,79 @@
+package Sanjai;
+import java.util.*;
+
+class BA{
+	private int accno;
+	private String acchname;
+	private double bal;
+	BA(int accno,String acchname,double bal){
+		this.accno=accno;
+		this.acchname=acchname;
+		this.bal=bal;
+	}
+	public void setaccno(int accno) {
+		if(accno>0) {
+			System.out.println(accno);
+		}
+		else {
+			System.out.println("no accno");
+		}
+	}
+	 void setacchname(String acchname) {
+		if(acchname!=null) {
+			System.out.println(acchname);
+		}
+	}
+	public void setb(double bal) {
+		if(bal>0) {
+			System.out.println(bal);
+		}
+	}
+	public int getaccno() {
+		return this.accno;
+	}
+	String getacchname() {
+		return this.acchname;
+	}
+	public double getb() {
+		return this.bal;
+	}
+	
+	void dep(double amo) {
+		if(amo>0) {
+			bal+=amo;
+			System.out.println(amo);
+		}
+		else {
+			System.out.println("Invalid deposit amo");
+		}
+	}
+	void wit(double amo) {
+		if(amo<=0) {
+			System.out.println("Invalid withdrawal amo");
+		}
+		else if(amo>bal) {
+			System.out.println("Insuff balance");
+		}
+		else {
+			System.out.println(amo);
+			bal-=amo;
+		}
+	}
+	void display() {
+		System.out.println(accno);
+		System.out.println(acchname);
+		System.out.println(bal);
+	}
+}
+
+public class project_1 {
+	public static void main(String[] args) {
+		BA a=new BA(12345, "Sanjai", 5000);
+		a.display();
+		System.out.println("------------------");
+		a.dep(2000);
+		a.wit(1500);
+		a.display();
+		
+	}
+}
