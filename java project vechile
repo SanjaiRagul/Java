@@ -1,3 +1,40 @@
+Vehicle Service System Using Abstraction in Java Create a Java program to manage a simple vehicle service system using abstraction. 
+The program should have an abstract class named VehicleService and child classes named CarService and BikeService. 
+The common service details should be stored in the abstract class, but the actual service charge calculation should be implemented by the child classes. 
+This problem is designed to understand:- Class- Object- Abstraction- Abstract class- Abstract method- Concrete method- Inheritance- 
+Method overriding- Runtime polymorphism Problem Requirements Abstract Class: 
+VehicleService Create an abstract class named VehicleService. 
+It should have the following variables: String customerName; String vehicleNumber; String serviceType; Create a concrete method: 
+void displayServiceDetails() This method should display: 
+Customer Name Vehicle Number Service Type Create an abstract method: 
+abstract double calculateServiceCharge(); 
+This method should not have a body inside the abstract class. 
+The child classes should provide their own implementation.
+Child Class 1: CarService Create a class named CarService that inherits the abstract class VehicleService. 
+class CarService extends VehicleService It should have the following variable: double sparePartsCost; 
+Override the abstract method: Page 1double calculateServiceCharge() 
+For car service, calculate the charge using this formula: serviceCharge = 2000 + sparePartsCost Here, 
+2000 is the fixed car service charge. Child Class 2: 
+BikeService Create a class named BikeService that inherits the abstract class VehicleService. 
+class BikeService extends VehicleService It should have the following variable: double sparePartsCost; 
+Override the abstract method: double calculateServiceCharge() For bike service, 
+calculate the charge using this formula: serviceCharge = 800 + sparePartsCost Here, 
+800 is the fixed bike service charge. 
+Expected Concept Abstraction The abstract class should have common details and common methods: 
+abstract class VehicleService It should also have an abstract method: abstract double calculateServiceCharge(); 
+The abstract method only says what should be done. The child classes decide how it should be done. 
+Important Rule You cannot create an object directly for an abstract class. This is not allowed: 
+VehicleService service = new VehicleService(); Instead, you should create objects for child classes: 
+VehicleService service; service = new CarService(); service = new BikeService(); 
+Sample Output Customer Name: Arun Vehicle Number: TN10AB1234 Service Type: 
+General Service Vehicle Category: Car Spare Parts Cost: 3500.0 Total Service Charge: 
+5500.0----------------------------Customer Name: Priya Vehicle Number: 
+TN11CD5678 Service Type: Oil Service Vehicle Category: Bike Spare Parts Cost: 1200.0 Total Service Charge: 2000.0  give me correct answer
+
+
+
+
+
 package Sanjai;
 import java.util.*;
 
